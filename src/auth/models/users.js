@@ -71,6 +71,7 @@ userSchema.statics.authenticateBasic = async function (username, password) {
 
 
 userSchema.statics.authenticateBearer =async function (token) {
+  console.log(SECRET,'SECRET From User Model');
   try {
     const payload = jwt.verify(token, SECRET);
   
