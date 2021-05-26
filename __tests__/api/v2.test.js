@@ -1,6 +1,7 @@
 'use strict';
 
-require('dotenv').config();
+process.env.SECRET = 'test';
+
 const supergoose = require('@code-fellows/supergoose');
 const jwt = require('jsonwebtoken');
 
@@ -9,7 +10,6 @@ const { server } = require('../../src/server.js');
 const request = supergoose(server);
 
 let id;
-let SECRET = process.env.SECRET || 'supersecret';
 let users = {
   user: { username: 'user', password: 'password', role: 'user' },
   editor: { username: 'editor', password: 'password', role: 'editor' },
@@ -22,10 +22,10 @@ beforeAll(async () => {
 });
 
 const user = { username: 'admin' };
-const token = jwt.sign(user, SECRET);
+const token = jwt.sign(user, process.env.SECRET);
 
 const basic = { username: 'basic' };
-const basicToken = jwt.sign(basic, SECRET);
+const basicToken = jwt.sign(basic, process.env.SECRET);
 
 
 
