@@ -1,11 +1,11 @@
 # auth-api
 
 ## Author: Omar Ewies
-* [Tests Report]()
+* [Tests Report](https://github.com/oebitw/auth-api/actions)
 
-* [Heroku Deployment]()
+* [Heroku Deployment](https://oebitw-auth-api.herokuapp.com/)
 
-* [Pull Request]()
+* [Pull Request](https://github.com/oebitw/auth-api/pull/1)
 
 ## Setup
 
