@@ -171,7 +171,7 @@ If you signed up as:
 ` http://localhost:3030/api/v2/food/1514`
 
 * You can delete the data for specific food using its ID by sending delete request
-` http://localhost:3030/api/v2/food/1514`
+` http://localhost:3030/api/v2/food/15145`
 
 
 
