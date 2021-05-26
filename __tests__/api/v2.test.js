@@ -33,15 +33,6 @@ describe('Testing V2 routes ', () => {
 
 
 
-
-  it('Test getting data from /clothes route when there is no data', async () => {
-    const response = await request
-      .get('/api/v2/clothes')
-      .set('Authorization', `Bearer ${token}`);
-    expect(response.status).toEqual(200);
-    expect(response.body).toEqual([]);
-  });
-
   it('Test POST new clothes using /clothes', async () => {
     const response = await request
       .post('/api/v2/clothes')
